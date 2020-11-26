@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="icon" href="../media/icon/Cloud.ico">
+    <link rel="shortcut icon" href="../media/icon/Cloud.ico">
+    <title>Cloudㅣ공식 서버</title>
+</head>
+<style>
+    .t{text-align: center;}
+    .t1{font-size: 2.5em;margin-top: 200px;}
+    .t2{font-size: 1.5em;margin-top: 20px;}
+    .t3{
+        background: white;
+        border-color: rgba(0,0,0,0);
+        font-size: 1.3em;
+        padding: 20px;
+        width: 300px;
+        height: 70px;
+        border-radius: 50px;
+        margin: 20px;
+        transition: 0.3s;
+    }
+    .t3:hover{
+        background-color: rgb(43, 43, 43);
+        color: white;
+        border: 1px solid white;
+        transition: 0.3s;
+        width: 400px;
+    }
+</style>
+<body>
+    <div class="loading">
+        <div class="head">
+            <div class="title">
+                <img class="logo" src="../media/all/logo.png">
+                <div class="title-t">
+                    Cloudㅣ클라우드
+                </div>
+            </div>
+            <div class="menu">
+                <li class="tabButton5" onclick="location.href='../promotion'">공지</li>
+                <li class="tabButton4" onclick="location.href='../dscord'">공식 서버</li>
+                <li class="tabButton3" onclick="location.href='../invite'">봇 초대</li>
+                <li class="tabButton2" onclick="location.href='../intro'">봇 소개</li>
+                <li class="tabButton1" onclick="location.href='../main'">메인</li>
+            </div>
+        </div>
+        <div class="t">
+            <div class="t1">Cloud 공식 서버입니다!</div>
+            <div class="t2">Cloud 공식 서버에서는 다양한 사람들과 대화할수 있는 컨셉 커뮤니티가 준비되어 있습니다!<br>봇에 대해서 문의도 받습니다! 많이 들어와주세요!</div>
+            <a href="https://discord.gg/sCQpNeHQzw">
+                <button class="t3">들어가기</button>
+            </a>
+        </div>
+        <div class="footer">
+            <div class="dev">
+                <img class="dev-img" src="../media/all/logo.png">
+            </div>
+            <div class="footer1">
+                <div class="info">개발정보<div class="info0"><br><div class="info-1" onclick="location.href='../persinfo'">이용약관</div>ㅣ<div class="info-2" onclick="location.href='../termsconditions'">처리방침</div></div>
+                <div class="deve"><div class="developer">개발 : corche-2000#6718</div>ㅣ<div class="maile">메일 : corche2000@naver.com</div></div>
+                <div class="licence">© 2020 Cloud. All rights reserved.</div>
+            </div>
+        </div>
+        <div class="theme-button">
+            <button class="theme" onclick="darkMode()" id="button">🌙다크모드</button>
+        </div>
+        <script>
+            function darkMode() {
+                var body = document.body;
+                body.classList.toggle("dark-mode");
+                var button = document.getElementById("button");
+                if(button.innerHTML == "🌙다크모드") {
+                    button.innerHTML = "🌞라이트모드";
+                } else {
+                    button.innerHTML = "🌙다크모드";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
